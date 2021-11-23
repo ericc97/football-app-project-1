@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<!-- fh5tsn6dz55aesgchyqxtxwq -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,64 +17,76 @@
 
 </head>
 <body>
-    <header class="flex-1 text-center text-lg font-bold">
-        <h2>Football App</h2>
-    </header>
-
-    <section class="flex-1 grid grid-cols-3 border-2 border-black m-4">
-        <div class="text-center">
-            team logo
-        </div>
-
-        <div class="text-center">
-            <img class="left">
-            <!--Team record Left-->
-            <img class="right">
-            <!-- Team record right-->
+    <main>
+        <aside class="left-side-container float-left w-64">
             <div class="">
-                Weather in ______
-                <!--weather-->
-            </div>
-           
-            <div>
-                <!--Location-->
-                Stadium Location
-            </div>
-            <h2>
-                Put next scheduled game here
-            </h2>
-        </div>
-            
-            <div class="text-center">
-                team logo
-            </div>
-            
-    </section>
-
-    <main class="flex-1 grid grid-cols-2 gap-4 m-4">
-
-        <aside class="border-2 border-black">
-            <div class="text-center mt-10 border-b-2 border-black">
                 <label for="cars"><h2>Choose a Team:</h2></label>
                 <select name="teams" id="teams">
                     <!--List NFL Teams-->
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="cardnials">Arizona Cardnials</option>
+                    <option value="falcons">Atlanta Falcons</option>
+                    <option value="ravens">Baltimore Ravens</option>
+                    <option value="bills">Buffalo Bills</option>
+                    <option value="panters">Carolina Panthers</option>
+                    <option value="bears">Chicago Bears</option>
+                    <option value="bengals">Cincinnati Bengals</option>
+                    <option value="browns">Cleaveland Browns</option>
+                    <option value="cowboys">Dallas Cowboys</option>
+                    <option value="broncos">Denver Broncos</option>
+                    <option value="lions">Detroit Lions</option>
+                    <option value="packers">Green Bay Packers</option>
+                    <option value="texans">Houston Texans</option>
+                    <option value="colts">Indianapolis Colts</option>
+                    <option value="jaguars">Jacksonville Jaguars</option>
+                    <option value="chiefs">Kansas City Chiefs</option>
+                    <option value="raiders">Las Vegas Raiders</option>
+                    <option value="chargers">Los Angeles Chargers</option>
+                    <option value="rams">Los Angeles Rams</option>
+                    <option value="dolphins">Miami Dolphins</option>
+                    <option value="vikings">Minnesota Vikings</option>
+                    <option value="patriots">New England Patriots</option>
+                    <option value="saints">New Orleans Saints</option>
+                    <option value="giants">New York Giants</option>
+                    <option value="jets">New York Jets</option>
+                    <option value="eagles">Philadelphia Eagles</option>
+                    <option value="steelers">Pittsburgh Stealers</option>
+                    <option value="49ers">San Fancisco 49ers</option>
+                    <option value="seahawks">Seatle Seahawks</option>
+                    <option value="buccaneers">Tampa Bay Buccaneers</option>
+                    <option value="titans">Tennessee Titans</option>
+                    <option value="washington">Washington Football Team</option>
+
                 </select>
             </div>
         </aside>
-        
-        <!-- <section>
+        <section class="current-game-preview border-solid border-4 border-light-blue-500 justify-center w-64">
+            <div class="">
+                <img class="left">
+                <!--Team record Left-->
+                <img class="right">
+                <!-- Team record right-->
+                <div>
+                    <!--weather-->
+                </div>
+                <div>
+                    <!--Location-->
+                </div>
+                <h2>
+                    Put next scheduled game here
+                </h2>
+                
+            </div>
+
+        </section>
+        <section>
             <div>
                 <h2>
                     Extra content here if time
                 </h2>
             </div>
-        </section> -->
-        <aside class="grid grid-cols-2 border-2 border-black">
-            <div class="text-center mt-2 mb-2">
+        </section>
+        <aside class="right-side-container float-right">
+            <div>
                 <h2>Season Schedule:</h2>
                 <p>Description: </p>
                 <p> Temperature: </p>
@@ -84,10 +94,6 @@
                 <p> Wind Speed: </p>
                 <p> Uv Index: </p>
 
-            </div>
-            <div class="text-center mt-2 mb-2">
-                <h2>Season Schedule:</h2>
-                <p>Description: </p>
             </div>
 
         </aside>
