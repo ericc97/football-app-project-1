@@ -1,4 +1,4 @@
-
+let dropDownEl = document.getElementById("teams")
 // This code sets the searches to local storage if there is nothing present. 
 let footballSearches = localStorage.getItem("mySearches")
                                 ? JSON.parse(localStorage.getItem("mySearches"))
@@ -15,28 +15,25 @@ function populateSchedule(games) {
 }
 
 function handleSearch() {
-	let cryptoId = input.value
-	let APIurl = `https://api.nomics.com/v1/currencies/ticker?key=1c9290f94cc5bd355453afe72dc1fa4d89225b52&ids=${cryptoId}&interval=1d,7d,30d,365d,ytd&convert=USD&per-page=100&page=1`
+	let dropDownIdEl = dropDownEl.value
+	let APIurl = `https://api.sportsdata.io/v3/nfl/scores/json/Scores/2021?key=e77c0acec9484a79a70b9080ee4959b2`
 	
-	if (cryptoId) {
 		// make a fetch call => function
 		getSchedule(APIurl)
-	}
-	
-	input.value = ''
 }
 
 function getSchedule(APIurl) {
-	fetch(url)
+	fetch(APIurl)
 	.then(response => response.json())
-	.then(data => {
-		console.log('data: ', data);
-		let crypto = data[0]
+	.then(schedule => {
+		console.log(schedule);
+		
 		populateSchedule(schedule)
-		let footballSearches = JSON.parse(localStorage.getItem('mySearches'))
-		footballSearches.push(crypto.id)
+
 	})
 	.catch(err => {
-		if (err) alert('bad input')
+		if (err) alert("Error: " + response.statusText)
 	})
 }
+
+dropDownEl.addEventListener("change", handleSearch)
