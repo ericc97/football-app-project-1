@@ -1,3 +1,20 @@
 *{
-    font-family: lato, sans-serif;
+    font-family: sans-serif;
+}
+
+#top-box{
+    color: whitesmoke;
+    font-size: 25px;
+    background-image: url(/assets/Images/football-field.jpg);
+    background-size: cover;
+    min-height: auto;
+}
+
+#news-section{
+    font-size: 20px;
+}
+
+#url-content:hover{
+    color:purple;
+    text-decoration: underline;
 }

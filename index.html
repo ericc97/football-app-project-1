@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<!-- fh5tsn6dz55aesgchyqxtxwq -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,36 +18,43 @@
 
 </head>
 <body>
-    <header class="flex-1 text-center text-lg font-bold">
+    <header class="flex-1 text-center text-lg font-bold pt-4">
         <h2>Football App</h2>
     </header>
 
-    <section class="flex-1 grid grid-cols-3 border-2 border-black m-4">
-        <div class="text-center">
-            team logo
+    <section class=" hero flex flex-1 grid grid-cols-3 border-2 border-black m-4" id="top-box">
+        <div class="flex grid items-center justify-center mt-3">
+            <img class="left w-24 h-16" src="https://upload.wikimedia.org/wikipedia/en/7/72/Arizona_Cardinals_logo.svg">
+            <h2><span class="name" id="team-name-home"></span></h2>
+            <h2>Current Record:<span class="current" id="current-record-home"></span></h2>
+            <h2>ML Odds: <span class="current" id="money-line-home"></span></h2>
         </div>
 
         <div class="text-center">
-            <img class="left">
+
             <!--Team record Left-->
             <img class="right">
             <!-- Team record right-->
             <div class="">
-                Weather in ______
-                <!--weather-->
+                <h2 class="stadium-name font-semibold"> Location: <span class="underline" id="stadium-name"></span><span class="current-stadium underline"></span></h2>
+
             </div>
-           
+            <!--weather-->
+            <h3 class="weather flex justify-center h-8" id="weather-icon">Current Weather:  <span class="relative flex content-center h-7 " id="icon"></span></h3>
             <div>
                 <!--Location-->
-                Stadium Location
+                <p> Forecasted Temperature high: <span class="forecast-temp-high" id="temp-high"></span>&#8457</p>
+                <p> Forecasted Temperature Low: <span class="forecast-temp-low" id="temp-low"></span>&#8457 </p>
+                <p> Forecasted Wind Speed: <span class="forecast-wind-speed" id="wind-speed"></span> </p>
             </div>
-            <h2>
-                Put next scheduled game here
-            </h2>
+
         </div>
             
-            <div class="text-center">
-                team logo
+            <div class="flex grid items-center justify-center mt-1">
+                <img class="right w-24 h-16 mx-auto" src="https://cdn.freebiesupply.com/images/large/2x/houston-texans-logo-transparent.png">
+                <h2><span class="name" id="team-name-away"></span></h2>
+                <h2>Current Record:<span class="current" id="current-record-right"></span></h2>
+                <h2>ML Odds: <span class="current" id="money-line-away"></span></h2>
             </div>
             
     </section>
@@ -60,10 +66,16 @@
                 <label for="cars"><h2>Choose a Team:</h2></label>
                 <select name="teams" id="teams">
                     <!--List NFL Teams-->
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="NE">New England Patriots</option>
+                    <option value="CIN">Cincinnati Bengals</option>
+                    <option value="ATL">Atlanta Falcons</option>
+                    <option value="DAL">Dallas Cowboys</option>
+                    <option value="BUF">Buffalo Bills</option>
+                    <option value="IND">Indianapolis Colts</option>
+                    <option value="BAL">Baltimore Ravens</option>
+                    <option value="ARI">Arizona Cardinals</option>
+                    <option value="DET">Detroit Lions</option>
+                    <option value="CLE">Cleveland Browns</option>
                 </select>
             </div>
         </aside>
@@ -92,7 +104,22 @@
 
         </aside>
     </main>
+    <section id="news-section">
+        <div class="flex flex-1 grid grid-cols-1 border-2 border-black m-4">
+            <h1 class="text-center mt-3">
+                Fantasy New's Updates For Selected Team
+            </h1>
+            <div class="m-6 leading-8">
+                <h3 class="bold underline">Title:</h3>
+                <h3><span id="news-title"></span></h3>
+                <p class="underline">Content:</p>
+                <p><span id="news-content"></span></p>
+                <p class="underline">Source Url:</p>
+                <p><a href=""  id="url-content"></a></p>
+            </div>
+        </div>
+    </section>
     
-<link href="./assets/Js/script.js">
+<script src="./assets/Js/script.js"></script>
 </body>
 </html>
