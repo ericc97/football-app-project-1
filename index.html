@@ -23,38 +23,34 @@
     </header>
 
     <section class=" hero flex flex-1 grid grid-cols-3 border-2 border-black m-4" id="top-box">
-        <div class="flex grid items-center justify-center mt-3">
-            <img class="left w-24 h-16" src="https://upload.wikimedia.org/wikipedia/en/7/72/Arizona_Cardinals_logo.svg">
-            <h2><span class="name" id="team-name-home"></span></h2>
-            <h2>Current Record:<span class="current" id="current-record-home"></span></h2>
-            <h2>ML Odds: <span class="current" id="money-line-home"></span></h2>
+        <div class="left flex grid items-center justify-center mt-3">
+            <img id="logo-img-home" class="w-24 h-16 mx-auto" src="">
+            <h2 class="text-center"><span class="name" id="team-name-home"></span></h2>
+            <h2><span class="current" id="current-record-home"></span></h2>
+            <h2 class="text-center"><span class="current" id="money-line-home"></span></h2>
         </div>
 
-        <div class="text-center">
-
-            <!--Team record Left-->
-            <img class="right">
-            <!-- Team record right-->
+        <div class=" game-info text-center">
             <div class="">
-                <h2 class="stadium-name font-semibold"> Location: <span class="underline" id="stadium-name"></span><span class="current-stadium underline"></span></h2>
+                <h2 class="stadium-name font-semibold mx-auto"> <span class="underline" id="stadium-name"></span><span class="current-stadium underline"></span></h2>
 
             </div>
             <!--weather-->
-            <h3 class="weather flex justify-center h-8" id="weather-icon">Current Weather:  <span class="relative flex content-center h-7 " id="icon"></span></h3>
+            <h3 class="weather flex justify-center h-8" id="weather-icon">  <span class=" weather-icon relative flex content-center h-7 " id="icon"></span></h3>
             <div>
                 <!--Location-->
-                <p> Forecasted Temperature high: <span class="forecast-temp-high" id="temp-high"></span>&#8457</p>
-                <p> Forecasted Temperature Low: <span class="forecast-temp-low" id="temp-low"></span>&#8457 </p>
-                <p> Forecasted Wind Speed: <span class="forecast-wind-speed" id="wind-speed"></span> </p>
+                <p> <span class="forecast-temp-high" id="temp-high"></span></p>
+                <p><span class="forecast-temp-low" id="temp-low"></span></p>
+                <p><span class="forecast-wind-speed" id="wind-speed"></span> </p>
             </div>
 
         </div>
             
-            <div class="flex grid items-center justify-center mt-1">
-                <img class="right w-24 h-16 mx-auto" src="https://cdn.freebiesupply.com/images/large/2x/houston-texans-logo-transparent.png">
-                <h2><span class="name" id="team-name-away"></span></h2>
-                <h2>Current Record:<span class="current" id="current-record-right"></span></h2>
-                <h2>ML Odds: <span class="current" id="money-line-away"></span></h2>
+            <div class="right flex grid items-center justify-center mt-3">
+                <img id="logo-img-away" class="w-24 h-16 mx-auto" src="">
+                <h2 class="text-center"><span class="name" id="team-name-away"></span></h2>
+                <h2><span class="current" id="current-record-away"></span></h2>
+                <h2 class="text-center"><span class="current" id="money-line-away"></span></h2>
             </div>
             
     </section>
@@ -66,27 +62,43 @@
                 <label for="cars"><h2>Choose a Team:</h2></label>
                 <select name="teams" id="teams">
                     <!--List NFL Teams-->
-                    <option value="NE">New England Patriots</option>
-                    <option value="CIN">Cincinnati Bengals</option>
+                    <option value="ARI">Arizona Cardinals </option>
                     <option value="ATL">Atlanta Falcons</option>
-                    <option value="DAL">Dallas Cowboys</option>
-                    <option value="BUF">Buffalo Bills</option>
-                    <option value="IND">Indianapolis Colts</option>
                     <option value="BAL">Baltimore Ravens</option>
-                    <option value="ARI">Arizona Cardinals</option>
-                    <option value="DET">Detroit Lions</option>
+                    <option value="BUF">Buffalo Bills</option>
+                    <option value="CAR">Carolina Panthers</option>
+                    <option value="CHI">Chicago Bears</option>
+                    <option value="CIN">Cincinnati Bengals</option>
                     <option value="CLE">Cleveland Browns</option>
+                    <option value="DAL">Dallas Cowboys</option>
+                    <option value="DEN">Denver Broncos</option>
+                    <option value="DET">Detroit Lions</option>
+                    <option value="GB">Green Bay Packers</option>
+                    <option value="HOU">Houston Texans</option>
+                    <option value="IND">Indianapolis Colts</option>
+                    <option value="JAX">Jacksonville Jaguars</option>
+                    <option value="KC">Kansas City Chiefs</option>
+                    <option value="LV">Las Vegas Raiders</option>
+                    <option value="LAR">Los Angeles Chargers</option>
+                    <option value="LAC">Los Angeles Rams</option>
+                    <option value="MIA">Miami Dolphins</option>
+                    <option value="MIN">Minnesota Vikings</option>
+                    <option value="NE">New England Patriots</option>
+                    <option value="NO">New Orleans Saints</option>
+                    <option value="NYG">New York Giants</option>
+                    <option value="NYJ">New York Jets</option>
+                    <option value="PHI">Philadelphia Eagles</option>
+                    <option value="PIT">Pittsburgh Steelers</option>
+                    <option value="SF">San Francisco 49ers</option>
+                    <option value="SEA">Seattle Seahawks</option>
+                    <option value="TB">Tampa Bay Buccaneers</option>
+                    <option value="TEN">Tennessee Titans</option>
+                    <option value="WAS">Washington Football Team</option>
                 </select>
             </div>
         </aside>
         
-        <!-- <section>
-            <div>
-                <h2>
-                    Extra content here if time
-                </h2>
-            </div>
-        </section> -->
+
         <aside class="grid grid-cols-2 border-2 border-black">
             <div class="text-center mt-2 mb-2">
                 <h2>Season Schedule:</h2>
@@ -107,19 +119,33 @@
     <section id="news-section">
         <div class="flex flex-1 grid grid-cols-1 border-2 border-black m-4">
             <h1 class="text-center mt-3">
-                Fantasy New's Updates For Selected Team
+                New's Updates Around The League
             </h1>
-            <div class="m-6 leading-8">
-                <h3 class="bold underline">Title:</h3>
-                <h3><span id="news-title"></span></h3>
-                <p class="underline">Content:</p>
-                <p><span id="news-content"></span></p>
-                <p class="underline">Source Url:</p>
-                <p><a href=""  id="url-content"></a></p>
+            <div class="news m-6 leading-8">
+                <h3 class="bold underline"></h3>
+                <h3><span id="news-title0"></span></h3>
+                <p class="underline"></p>
+                <p><span id="news-content0"></span></p>
+                <p class="underline"></p>
+                <p><a href=""  id="url-content0"></a></p>
+                <br>
+                <h3 class="bold underline"></h3>
+                <h3><span id="news-title1"></span></h3>
+                <p class="underline"></p>
+                <p><span id="news-content1"></span></p>
+                <p class="underline"></p>
+                <p><a href=""  id="url-content1"></a></p>
+                <br>
+                <h3 class="bold underline"></h3>
+                <h3><span id="news-title2"></span></h3>
+                <p class="underline"></p>
+                <p><span id="news-content2"></span></p>
+                <p class="underline"></p>
+                <p><a href=""  id="url-content2"></a></p>
             </div>
         </div>
     </section>
     
-<script src="./assets/Js/script.js"></script>
+<script src="./assets/Js/script.eric.js"></script>
 </body>
 </html>
