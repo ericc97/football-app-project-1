@@ -35,7 +35,7 @@ function populateHomeSchedule(games) {
 // 		getSchedule(APIurl)
 // }
 
-const getGameData = async() => {
+const getGameData1 = async() => {
     const scheduleApiURL = "https://api.sportsdata.io/v3/nfl/scores/json/Schedules/2021?key=e77c0acec9484a79a70b9080ee4959b2"
     let response = await fetch(scheduleApiURL)
     let schedule = await response.json()
@@ -46,7 +46,7 @@ const getGameData = async() => {
     return {schedule,standingsData};
 }
 const gameInfo = function() {
-    getGameData()
+    getGameData1()
         .then(data => {
             let addedElements = document.querySelectorAll(".added")
             if (addedElements) {
@@ -77,8 +77,8 @@ const gameInfo = function() {
 })   
 
 
-// const currentGame = function(){
-//     getGameData()
+// const currentGame1 = function(){
+//     getGameData1()
 //         .then(data => {
 //             data.gameData.filter(function(game) {
 //                 if (game.AwayTeam === chosenTeam.value || game.HomeTeam === chosenTeam.value) {
@@ -87,7 +87,7 @@ const gameInfo = function() {
 //                     moneyLineAway.textContent = game.AwayTeamMoneyLine;
 // }
 
-// const getGameData = async() => {
+// const getGameData1 = async() => {
 //     const weekApiURL = "https://api.sportsdata.io/v3/nfl/scores/json/UpcomingWeek?key=e77c0acec9484a79a70b9080ee4959b2"
 //     let response = await fetch(weekApiURL)
 //     let week = await response.json()
