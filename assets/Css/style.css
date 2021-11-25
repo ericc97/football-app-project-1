@@ -1,3 +1,78 @@
 *{
-    font-family: lato, sans-serif;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(./assets\Images\dionte-johnson.webp);
+}
+
+#top-box{
+    color: whitesmoke;
+    font-size: 25px;
+    background-image: url(/assets/Images/football-field.jpg);
+    background-size: cover;
+    min-height: 400px;
+
+}
+
+.game-info {
+    line-height: 4.5;
+   
+}
+
+.game-info img{
+    margin-top:auto;
+    height: 60px;
+    width: 60px;
+    
+}
+
+h2.stadium-name{
+    width: 400px;
+
+}
+
+#news-section{
+    font-size: 20px;
+}
+
+#url-content0:hover, #url-content1:hover, #url-content2:hover{
+    color:purple;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px){
+    section.hero{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    
+}
+
+@media screen and (max-width: 970px){
+    h2.stadium-name{
+        width: 300px;
+        text-align: center;
+    
+    }
+}
+
+@media screen and (max-width: 800px){
+    h2.stadium-name{
+        width: 300px;
+        text-align: center;
+    
+    }
+    .hero{
+        font-size: 20px;
+        
+    }
+    .game-info{
+        font-size: 20px;
+        line-height: 3.50;
+    }
+    .left, .right{
+        font-size: 20px;
+    }
 }
