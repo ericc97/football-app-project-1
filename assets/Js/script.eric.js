@@ -12,7 +12,7 @@ let homeTeamName = document.getElementById("team-name-home");
 let awayTeamName = document.getElementById("team-name-away");
 let stadiumName = document.getElementById("stadium-name");
 let gameTime = document.getElementById("game-time");
-let chosenTeam = document.getElementById('teams')
+let chosenTeam1 = document.getElementById('teams')
 let logoImgHome = document.getElementById("logo-img-home");
 let logoImgAway = document.getElementById("logo-img-away");
 
@@ -54,10 +54,10 @@ const currentGame = function () {
 
             data.gameData.filter(function (game) {
 
-                if (game.AwayTeam === chosenTeam.value || game.HomeTeam === chosenTeam.value) {
+                if (game.AwayTeam === chosenTeam1.value || game.HomeTeam === chosenTeam1.value) {
                     //console.log('game: ', game);
                     data.teamLogoData.filter(function (logos) {
-                        if (logos.Key == chosenTeam.value) {
+                        if (logos.Key == chosenTeam1.value) {
                             console.log(logos.WikipediaLogoUrl);
 
                             logoImgHome.src = logos.WikipediaLogoUrl;
@@ -80,7 +80,7 @@ const currentGame = function () {
                         //console.log('record: ', record);
 
 
-                        if (record.Team === chosenTeam.value) {
+                        if (record.Team === chosenTeam1.value) {
                             //console.log(record.Losses)
                             //console.log(record.Wins)
                             currentRecordLeft.textContent = "Current Record: " + "(" + record.Wins + "," + record.Losses + ")";
@@ -238,4 +238,4 @@ const currentNews = function () {
 
 
 
-chosenTeam.addEventListener('change', currentGame)
+chosenTeam1.addEventListener('change', currentGame)

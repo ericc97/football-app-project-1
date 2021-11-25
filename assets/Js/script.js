@@ -2,6 +2,7 @@ let chosenTeam = document.getElementById('teams')
 let HomeEl = document.getElementById("home")
 let AwayEl = document.getElementById("away")
 
+
 // // This code sets the searches to local storage if there is nothing present. 
 // let footballSearches = localStorage.getItem("mySearches")
 //                                 ? JSON.parse(localStorage.getItem("mySearches"))
@@ -35,7 +36,7 @@ function populateHomeSchedule(games) {
 // 		getSchedule(APIurl)
 // }
 
-const getGameData = async() => {
+const getGameData1 = async() => {
     const scheduleApiURL = "https://api.sportsdata.io/v3/nfl/scores/json/Schedules/2021?key=e77c0acec9484a79a70b9080ee4959b2"
     let response = await fetch(scheduleApiURL)
     let schedule = await response.json()
@@ -46,7 +47,7 @@ const getGameData = async() => {
     return {schedule,standingsData};
 }
 const gameInfo = function() {
-    getGameData()
+    getGameData1()
         .then(data => {
             let addedElements = document.querySelectorAll(".added")
             if (addedElements) {
@@ -77,26 +78,27 @@ const gameInfo = function() {
 })   
 
 
-// const currentGame = function(){
-//     getGameData()
-//         .then(data => {
-//             data.gameData.filter(function(game) {
-//                 if (game.AwayTeam === chosenTeam.value || game.HomeTeam === chosenTeam.value) {
-//                     console.log(game)
-//                     awayTeamName.textContent = game.AwayTeam;
-//                     moneyLineAway.textContent = game.AwayTeamMoneyLine;
-// }
 
-// const getGameData = async() => {
-//     const weekApiURL = "https://api.sportsdata.io/v3/nfl/scores/json/UpcomingWeek?key=e77c0acec9484a79a70b9080ee4959b2"
-//     let response = await fetch(weekApiURL)
-//     let week = await response.json()
-
-//     let recordResponseUrl = "https://api.sportsdata.io/v3/nfl/scores/json/Standings/2021REG?key=e77c0acec9484a79a70b9080ee4959b2";
-//     let recordResponse = await fetch(recordResponseUrl)
-//     let recordData = await recordResponse.json();
-//     return {gameData,recordData};
-// }
 }
+
+// add searched team Key to saved list
+// convert this to Vanilla Javascript 
+// var addToList = function(c){
+//     var listEl = $("<li >" + c.toUpperCase() + "</li>");
+//     $(listEl).attr("class", "list-group-item");
+//     $(listEl).attr("data-value", c.toUpperCase());
+
+//     $(".list-group").append(listEl);
+//     console.log(c);
+// }
+
+// when clear search history is clicked removed listed cities
+// var clearSearchBtn = function(event){
+//     event.preventDefault();
+//     sCity = [];
+//     // change this tpo work with team Key value
+//     localStorage.removeItem("cityname");
+//     document.location.reload();
+// }
 
 chosenTeam.addEventListener('change', gameInfo)
