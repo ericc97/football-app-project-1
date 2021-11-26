@@ -12,13 +12,14 @@
 
 }
 
+
 .game-info {
     line-height: 4.5;
    
 }
 
 .game-info img{
-    margin-top:auto;
+    margin-top:24px;
     height: 60px;
     width: 60px;
     
@@ -72,5 +73,11 @@ h2.stadium-name{
     }
     .left, .right{
         font-size: 20px;
+    }
+    .game-info img{
+        margin-top:auto;
+        height: 60px;
+        width: 60px;
+        
     }
 }

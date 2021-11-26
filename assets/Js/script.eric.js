@@ -59,7 +59,6 @@ const currentGame = function () {
                     data.teamLogoData.filter(function (logos) {
                         if (logos.Key == chosenTeam1.value) {
                             console.log(logos.WikipediaLogoUrl);
-
                             logoImgHome.src = logos.WikipediaLogoUrl;
 
 
