@@ -6,7 +6,7 @@
 #top-box{
     color: whitesmoke;
     font-size: 25px;
-    background-image: url(/assets/Images/football-field.jpg);
+    background-image: url(./assets/Images/football-field.jpg);
     background-size: cover;
     min-height: 400px;
 
@@ -74,6 +74,7 @@ h2.stadium-name{
     .left, .right{
         font-size: 20px;
     }
+
     .game-info img{
         margin-top:auto;
         height: 60px;
@@ -81,3 +82,6 @@ h2.stadium-name{
         
     }
 }
+
+}
+
