@@ -6,5 +6,5 @@
 Whether you are planning to attend an NFL football game or are a fantasy manager just curious about an upcoming game then look no futher. User's will select a team and then the App will load current information regarding who they play next and their season schedule. Other information such as current weather and weather forecasted for gameday will appear. Also the teams current records will display. The user will be able to see the season schedule and some current news around the league will appear on the bottom section. 
 
 #### Jumbotron Screen 
-!Football App](./assets/Images/landing-page-img.png "Football App landing page image")
+[!Football App](./assets/Images/landing-page-img.png "Football App landing page image")
 
