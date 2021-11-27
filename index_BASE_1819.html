@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- fh5tsn6dz55aesgchyqxtxwq -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link tailwind-->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--Link user custom css-->
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    
+
+
+    <title>Football App</title>
+
+</head>
+<body>
+    <header class="flex-1 text-center text-lg font-bold">
+        <h2>Football App</h2>
+    </header>
+
+    <section class="flex-1 grid grid-cols-3 border-2 border-black m-4">
+        <div class="text-center">
+            team logo
+        </div>
+
+        <div class="text-center">
+            <img class="left">
+            <!--Team record Left-->
+            <img class="right">
+            <!-- Team record right-->
+            <div class="">
+                Weather in ______
+                <!--weather-->
+            </div>
+           
+            <div>
+                <!--Location-->
+                Stadium Location
+            </div>
+            <h2>
+                Put next scheduled game here
+            </h2>
+        </div>
+            
+            <div class="text-center">
+                team logo
+            </div>
+            
+    </section>
+
+    <main class="flex-1 grid grid-cols-2 gap-4 m-4">
+
+        <aside class="border-2 border-black">
+            <div class="text-center mt-10 border-b-2 border-black">
+                <label for="cars"><h2>Choose a Team:</h2></label>
+                <select name="teams" id="teams">
+                    <!--List NFL Teams-->
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </aside>
+        
+        <!-- <section>
+            <div>
+                <h2>
+                    Extra content here if time
+                </h2>
+            </div>
+        </section> -->
+        <aside class="grid grid-cols-2 border-2 border-black">
+            <div class="text-center mt-2 mb-2">
+                <h2>Season Schedule:</h2>
+                <p>Description: </p>
+                <p> Temperature: </p>
+                <p> Humidity: </p>
+                <p> Wind Speed: </p>
+                <p> Uv Index: </p>
+
+            </div>
+            <div class="text-center mt-2 mb-2">
+                <h2>Season Schedule:</h2>
+                <p>Description: </p>
+            </div>
+
+        </aside>
+    </main>
+    
+<link href="./assets/Js/script.js">
+</body>
+</html>
