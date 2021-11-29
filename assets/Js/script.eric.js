@@ -147,7 +147,6 @@ for (var i = 0; themeDots.length > i; i++){
 let theme = localStorage.getItem('theme');
 
 
-
 const setTheme = function(mode){
     if(mode == 'light'){
         document.getElementById("theme-style").href = "./assets/Css/style.css"
@@ -165,8 +164,6 @@ if(theme == null){
 }else{
     setTheme(theme);
 }
-
-
 
 
 
