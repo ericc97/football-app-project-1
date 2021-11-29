@@ -6,12 +6,22 @@
     --bgBody: #181818;
     --bgTeam:#404040;
     --body: rgb(27, 27, 27);
+    --labelText: rgb(19, 19, 19);
 
 }
 
 body {
     background-color: var(--body);
 }
+select{
+    color:black;
+}
+.label{
+    font-size: 30px;
+    color: white;
+   
+}
+
 #top-box{
     color: white;
     font-size: 25px;
@@ -25,10 +35,6 @@ body {
     height: 100px;
     width: 250px;
     font-size: 25px;
-}
-.label{
-    font-size: 30px;
-   
 }
 
 

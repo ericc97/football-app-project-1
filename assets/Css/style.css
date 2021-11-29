@@ -5,16 +5,19 @@
     --bgBody:rgb(245, 245, 245);
     --bg2:#404040;
     --body: rgb(255, 255, 255)smoke;
+    --labelText: rgb(0, 0, 0);
 }
 
 body {
      background-color: var(--body);
 }
-
+select{
+    color:black;
+}
 #top-box{
     color: white;
     font-size: 25px;
-    background-image: url(./assets/Images/football-field.jpg);
+    background-image: url(/assets/Images/football-field.jpg);
     background-size: cover;
     min-height: 400px;
 
@@ -27,6 +30,7 @@ body {
 }
 .label{
     font-size: 30px;
+    color:black;
    
 }
 
