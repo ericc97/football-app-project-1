@@ -150,10 +150,10 @@ let theme = localStorage.getItem('theme');
 
 const setTheme = function(mode){
     if(mode == 'light'){
-        document.getElementById("theme-style").href = "./assets/css/style.css"
+        document.getElementById("theme-style").href = "./assets/Css/style.css"
     }
     if(mode == 'dark'){
-        document.getElementById("theme-style").href = "./assets/css/styledark.css"
+        document.getElementById("theme-style").href = "./assets/Css/styledark.css"
     }
    
 
