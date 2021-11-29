@@ -106,6 +106,15 @@ h2.stadium-name{
     font-weight: 600;
    margin-top: 20px;
 }
+.team-menu h5{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.left-column p{
+    margin-left: 50px;
+}
 
 @media screen and (max-width: 500px){
     section.hero{
