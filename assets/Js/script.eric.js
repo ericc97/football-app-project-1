@@ -166,6 +166,39 @@ if(theme == null){
     setTheme(theme);
 }
 
+for (var i = 0; themeDots.length > i; i++){
+    themeDots[i].addEventListener("click", function(){
+        let mode =  this.dataset.mode
+        setTheme(mode);
+        
+    })
+}
+
+let theme = localStorage.getItem('theme');
+
+
+
+const setTheme = function(mode){
+    if(mode == 'light'){
+        document.getElementById("theme-style").href = "./assets/Css/style.css"
+    }
+    if(mode == 'dark'){
+        document.getElementById("theme-style").href = "./assets/Css/styledark.css"
+    }
+   
+
+    localStorage.setItem('theme',mode)
+}
+
+if(theme == null){
+    setTheme('light')
+}else{
+    setTheme(theme);
+}
+
+
+
+
 const currentWeather = function (city) {
     var apiUrlWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + ApiKeyWeather;
 
@@ -272,4 +305,6 @@ const currentNews = function () {
 
 
 
+
 chosenTeam1.addEventListener('change', currentGame)
+
