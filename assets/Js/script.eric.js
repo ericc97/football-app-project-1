@@ -15,11 +15,17 @@ let gameTime = document.getElementById("game-time");
 let chosenTeam1 = document.getElementById('teams')
 let logoImgHome = document.getElementById("logo-img-home");
 let logoImgAway = document.getElementById("logo-img-away");
+let themeDots = document.getElementsByClassName("theme-dot");
 
 
 // api key
+
+
+
 let apiKey = "h5tsn6dz55aesgchyqxtxwq";
 let ApiKeyWeather = "218bf9885141b28259c6e95eada68d3c";
+
+
 
 const getGameData = async () => {
     const weekApiURL = "https://api.sportsdata.io/v3/nfl/scores/json/UpcomingWeek?key=e77c0acec9484a79a70b9080ee4959b2"
@@ -125,11 +131,40 @@ const currentGame = function () {
 
         })
 
-
+        
 
     currentNews();
 
 };
+for (var i = 0; themeDots.length > i; i++){
+    themeDots[i].addEventListener("click", function(){
+        let mode =  this.dataset.mode
+        setTheme(mode);
+        window.alert("theme changed");
+    })
+}
+
+let theme = localStorage.getItem('theme');
+
+
+
+const setTheme = function(mode){
+    if(mode == 'light'){
+        document.getElementById("theme-style").href = "./assets/css/style.css"
+    }
+    if(mode == 'dark'){
+        document.getElementById("theme-style").href = "./assets/css/styledark.css"
+    }
+   
+
+    localStorage.setItem('theme',mode)
+}
+
+if(theme == null){
+    setTheme('light')
+}else{
+    setTheme(theme);
+}
 
 const currentWeather = function (city) {
     var apiUrlWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + ApiKeyWeather;

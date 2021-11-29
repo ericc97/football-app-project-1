@@ -1,16 +1,17 @@
 *{
     font-family: sans-serif;
 }
+
 :root{
-    --bgBody:rgb(245, 245, 245);
-    --bg2:#404040;
-    --body: rgb(255, 255, 255)smoke;
+    --bgBody: #181818;
+    --bgTeam:#404040;
+    --body: rgb(27, 27, 27);
+
 }
 
 body {
-     background-color: var(--body);
+    background-color: var(--body);
 }
-
 #top-box{
     color: white;
     font-size: 25px;
@@ -35,7 +36,17 @@ body {
     line-height: 4.5;
    
 }
+.s1 {
+    background-color: var(--bgTeam);
+    color:white;
+    overflow: auto;
+}
 
+.s2 {
+    background-color: var(--bgTeam);
+    color:white;
+    overflow: auto;
+}
 .game-info img{
     margin-top:24px;
     height: 60px;
@@ -74,19 +85,8 @@ h2.stadium-name{
     cursor: pointer;
 
 }
-.s1 {
-    background-color: var(--bgBody);
-    
-    overflow: auto;
-}
-
-.s2 {
-    background-color: var(--secondaryColor);
-    
-    overflow: auto;
-}
 .left-column{
-    background-color: var(--Bg2);
+    background-color: var(--BgTeam);
 }
 .theme-dot:hover{
     border-width: 5px;
@@ -104,11 +104,7 @@ h2.stadium-name{
 .team-menu h5{
     font-size: 25px;
     font-weight: 600;
-    margin-top: 20px;
-}
-
-.left-column p{
-    margin-left: 50px;
+   margin-top: 20px;
 }
 
 @media screen and (max-width: 500px){

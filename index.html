@@ -10,19 +10,19 @@
     <!-- Link google font-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
     <!--Link user custom css-->
-    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="./assets/css/style.css">
     
 
 
     <title>Football App</title>
 
 </head>
-<body>
-    <header class="flex-1 text-center text-lg font-bold pt-4">
+<body >
+    <header class=" s1 flex-1 text-center text-xl font-bold pt-4">
         <h2>Football App</h2>
     </header>
 
-    <section class=" hero flex flex-1 grid grid-cols-3 border-2 border-black m-4" id="top-box">
+    <section class=" s1 hero flex flex-1 grid grid-cols-3 border-2 border-black m-4" id="top-box">
         <div class="left flex grid items-center justify-center mt-3">
             <img id="logo-img-home" class="logo-image w-24 h-16 mx-auto" src="">
             <h2 class="text-center"><span class="name" id="team-name-home"></span></h2>
@@ -57,68 +57,74 @@
 
     <main class="flex-1 grid grid-cols-2 gap-4 m-4">
 
-        <aside class="border-2 border-black">
-            <div class="text-center mt-10 border-b-2 border-black">
-                <label for="cars"><h2>Choose a Team:</h2></label>
-                <!-- section for clear search history-->
-                <button id="clear-history" class=" border-2 border-black btn btn-secondary">Clear Search History</button>
-                <!-- list of cities searched-->
-                <ul class="list-group">
-                <select name="teams" id="teams">
+        <aside class="s2 team-menu">
+            <!--<a href="#">Select a NFL Team: </a>-->
+            <div class="left-column">
+                <h5 style="text-align: center; line-height:0;">Personalize Theme</h5>
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"><p class="">Light Mode</p></div>
+                    <br>
+                    <div data-mode="dark"id="dark-mode" class="theme-dot"><p class="">Dark Mode</p></div>
+                </div>
+            <div class=" py-6 px-10 text-sm text-center shadow-lg w-50 mb-4 ">
+                <label class="label" for="teams"><h2 class="drop-down-title">Choose a Team:</h2></label>
+                <br>
+                <select class="drop-down" name="teams" id="teams">
                     <!--List NFL Teams-->
-                    <option value="ARI">Arizona Cardinals </option>
-                    <option value="ATL">Atlanta Falcons</option>
-                    <option value="BAL">Baltimore Ravens</option>
-                    <option value="BUF">Buffalo Bills</option>
-                    <option value="CAR">Carolina Panthers</option>
-                    <option value="CHI">Chicago Bears</option>
-                    <option value="CIN">Cincinnati Bengals</option>
-                    <option value="CLE">Cleveland Browns</option>
-                    <option value="DAL">Dallas Cowboys</option>
-                    <option value="DEN">Denver Broncos</option>
-                    <option value="DET">Detroit Lions</option>
-                    <option value="GB">Green Bay Packers</option>
-                    <option value="HOU">Houston Texans</option>
-                    <option value="IND">Indianapolis Colts</option>
-                    <option value="JAX">Jacksonville Jaguars</option>
-                    <option value="KC">Kansas City Chiefs</option>
-                    <option value="LV">Las Vegas Raiders</option>
-                    <option value="LAR">Los Angeles Chargers</option>
-                    <option value="LAC">Los Angeles Rams</option>
-                    <option value="MIA">Miami Dolphins</option>
-                    <option value="MIN">Minnesota Vikings</option>
-                    <option value="NE">New England Patriots</option>
-                    <option value="NO">New Orleans Saints</option>
-                    <option value="NYG">New York Giants</option>
-                    <option value="NYJ">New York Jets</option>
-                    <option value="PHI">Philadelphia Eagles</option>
-                    <option value="PIT">Pittsburgh Steelers</option>
-                    <option value="SF">San Francisco 49ers</option>
-                    <option value="SEA">Seattle Seahawks</option>
-                    <option value="TB">Tampa Bay Buccaneers</option>
-                    <option value="TEN">Tennessee Titans</option>
-                    <option value="WAS">Washington Football Team</option>
+                    <option  class="font-semibold" value="ARI">Arizona Cardinals </option>
+                    <option class="font-semibold" value="ATL">Atlanta Falcons</option>
+                    <option class="font-semibold" value="BAL">Baltimore Ravens</option>
+                    <option class="font-semibold" value="BUF">Buffalo Bills</option>
+                    <option class="font-semibold" value="CAR">Carolina Panthers</option>
+                    <option class="font-semibold " value="CHI">Chicago Bears</option>
+                    <option class="font-semibold " value="CIN">Cincinnati Bengals</option>
+                    <option class=" font-semibold " value="CLE">Cleveland Browns</option>
+                    <option class="font-semibold" value="DAL">Dallas Cowboys</option>
+                    <option class="  font-semibold " value="DEN">Denver Broncos</option>
+                    <option class="  font-semibold " value="DET">Detroit Lions</option>
+                    <option class="  font-semibold" value="GB">Green Bay Packers</option>
+                    <option class=" font-semibold " value="HOU">Houston Texans</option>
+                    <option class="  font-semibold" value="IND">Indianapolis Colts</option>
+                    <option class="  font-semibold " value="JAX">Jacksonville Jaguars</option>
+                    <option class="  font-semibold " value="KC">Kansas City Chiefs</option>
+                    <option class="  font-semibold " value="LV">Las Vegas Raiders</option>
+                    <option class=" font-semibold " value="LAR">Los Angeles Chargers</option>
+                    <option class=" font-semibold " value="LAC">Los Angeles Rams</option>
+                    <option class="  font-semibold " value="MIA">Miami Dolphins</option>
+                    <option class=" font-semibold " value="MIN">Minnesota Vikings</option>
+                    <option class="  font-semibold " value="NE">New England Patriots</option>
+                    <option class="font-semibold " value="NO">New Orleans Saints</option>
+                    <option class=" font-semibold " value="NYG">New York Giants</option>
+                    <option class=" font-semibold" value="NYJ">New York Jets</option>
+                    <option class=" font-semibold " value="PHI">Philadelphia Eagles</option>
+                    <option class=" font-semibold " value="PIT">Pittsburgh Steelers</option>
+                    <option class=" font-semibold" value="SF">San Francisco 49ers</option>
+                    <option class="  font-semibold" value="SEA">Seattle Seahawks</option>
+                    <option class=" font-semibold" value="TB">Tampa Bay Buccaneers</option>
+                    <option class=" font-semibold " value="TEN">Tennessee Titans</option>
+                    <option class=" font-semibold " value="WAS">Washington Football Team</option>
                 </select>
             </div>
+            
         </aside>
         
 
-        <aside class="grid grid-cols-2 rounded-lg bg-blue-900 shadow-2xl">
-            <div class="text-center mt-2 mb-2 text-white" id="home">
+        <aside class=" s1 grid grid-cols-2 rounded-lg bg-blue-900 shadow-2xl">
+            <div class="text-center mt-2 mb-2 " id="home">
                 <h2 class="text-2xl">Home:</h2>
                 
 
 
             </div>
-            <div class="text-center mt-2 mb-2 text-white" id="away">
+            <div class="text-center mt-2 mb-2" id="away">
                 <h2 class="text-2xl">Away:</h2>
                 
             </div>
 
         </aside>
     </main>
-    <section id="news-section">
-        <div class="flex flex-1 grid grid-cols-1 border-2 border-black m-4">
+    <section>
+        <div class="s2 news-section flex flex-1 grid grid-cols-1 m-4 border-2 border-black">
             <h1 class="text-center mt-3">
                 New's Updates Around The League
             </h1>
@@ -146,8 +152,8 @@
             </div>
         </div>
     </section>
-    
-<script src="./assets/Js/script.js"></script>  
 <script src="./assets/Js/script.eric.js"></script>
+<script src="./assets/Js/script.js"></script>  
+
 </body>
 </html>
