@@ -121,18 +121,7 @@ h2.stadium-name{
         flex-direction: column;
     
     }
-    .team-menu{
-        font-size: 15px;
-        width: 136px;
-        height: 50px;
-        
-    }
-    aside.s1{
-        font-size: 15px;
-        width: 136px;
-        height: 50px;
-        
-    }
+  
      
 }
 
@@ -170,9 +159,9 @@ h2.stadium-name{
         
     }
     .team-menu{
-        font-size: 15px;
+        font-size: 13px;
         width: 136px;
-        height: 50px;
+        height: 80px;
         
     }
     .drop-down-title{
