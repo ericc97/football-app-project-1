@@ -25,7 +25,7 @@ select{
 #top-box{
     color: white;
     font-size: 25px;
-    background-image: url(/football-app-project-1/assets/Images/football-field.jpg);
+    background-image: url(/assets/Images/football-field.jpg);
     background-size: cover;
     min-height: 400px;
 
@@ -74,13 +74,14 @@ h2.stadium-name{
     line-height: 2;
 }
 .theme-dot{
-    height: 35px;
+    height: 45px;
     display:flex;
-    width: 35px;
+    width: 45px;
     border-radius: 50%;
     background-color: white;
+    font-size: 25px;
 
-    margin: 5px;
+    margin: 8px;
     border: 2px solid var(--themeDotBorder);
 
 
@@ -90,6 +91,9 @@ h2.stadium-name{
 
     cursor: pointer;
 
+}
+.theme-dot p{
+    padding-left: 15px;
 }
 .left-column{
     background-color: var(--BgTeam);
@@ -112,10 +116,8 @@ h2.stadium-name{
     font-weight: 600;
    margin-top: 20px;
 }
-.team-menu h5{
+.season-schedule p{
     font-size: 25px;
-    font-weight: 600;
-    margin-top: 20px;
 }
 
 .left-column p{
@@ -128,7 +130,34 @@ h2.stadium-name{
         flex-direction: column;
     
     }
-
+    .team-menu h5{
+        font-size: 13px;
+        margin-bottom: 9px;
+    }
+    .team-menu p{
+        font-size: 10px;
+    }
+    .theme-dot{
+        height: 22px;
+        width: 22px;
+    }
+   
+    .team-drop{
+        padding: 0px;
+    }
+    .drop-down{
+        margin-bottom: 30px;
+    }
+    aside .s2{
+        gap: 5px;
+    }
+    .season-schedule h2{
+        font-size: 13px;
+    }
+    .season-schedule p{
+        font-size: 10px;
+    }
+   
     
 }
 
@@ -137,6 +166,17 @@ h2.stadium-name{
         width: 300px;
         text-align: center;
     
+    }
+    .team-menu h5{
+        font-size: 13px;
+        margin-bottom: 9px;
+    }
+    .team-menu p{
+        font-size: 10px;
+    }
+    .theme-dot{
+        height: 22px;
+        width: 22px;
     }
     
 }
@@ -176,11 +216,25 @@ h2.stadium-name{
     }
     .drop-down{
         font-size: 10px;
-        width: 85px;
+        width: 80px;
         
     }
     .news-section{
         font-size: 13px;
     }
-    
+    aside.s2{
+        min-height: 484px;
+        
+        
+    }
+    aside.s2 h2{
+        padding-top: 40px;
+    }
+    .team-drop{
+        padding: 0px;
+    }
+    .drop-down{
+        margin-bottom: 30px;
+    }
+   
 }
