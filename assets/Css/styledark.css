@@ -164,11 +164,14 @@ h2.stadium-name{
         width: 60px;
         
     }
-     .team-menu{
+   .team-menu{
         font-size: 13px;
         width: 136px;
-        height: 100px;
+        min-height: 100px;
         
+    }
+    .team-menu h5{
+        font-size: 13px;
     }
     .drop-down-title{
         font-size: 15px;
