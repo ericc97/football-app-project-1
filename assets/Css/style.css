@@ -17,7 +17,7 @@ select{
 #top-box{
     color: white;
     font-size: 25px;
-    background-image: url(/football-app-project-1/assets/Images/football-field.jpg);
+    background-image: url(./football-app-project-1/assets/Images/football-field.jpg);
     background-size: cover;
     min-height: 400px;
 
@@ -128,7 +128,6 @@ h2.stadium-name{
         flex-direction: column;
     
     }
-<<<<<<< HEAD
     
     .team-menu h5{
         font-size: 13px;
@@ -156,10 +155,6 @@ h2.stadium-name{
     }
    
     
-=======
-  
-     
->>>>>>> 0ef3550ed047c2004556b614257e8b8552d7d2f6
 }
 
 @media screen and (max-width: 970px){
