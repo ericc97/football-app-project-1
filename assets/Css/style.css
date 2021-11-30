@@ -121,8 +121,19 @@ h2.stadium-name{
         flex-direction: column;
     
     }
-
-    
+    .team-menu{
+        font-size: 15px;
+        width: 136px;
+        height: 50px;
+        
+    }
+    aside.s1{
+        font-size: 15px;
+        width: 136px;
+        height: 50px;
+        
+    }
+     
 }
 
 @media screen and (max-width: 970px){
