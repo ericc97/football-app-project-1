@@ -17,7 +17,7 @@ select{
 #top-box{
     color: white;
     font-size: 25px;
-    background-image: url(./football-app-project-1/assets/Images/football-field.jpg);
+    background-image: url(/football-app-project-1/assets/Images/football-field.jpg);
     background-size: cover;
     min-height: 400px;
 
@@ -142,6 +142,7 @@ h2.stadium-name{
     }
     aside.s2{
         min-height: 300px;
+       
         
     }
     aside.s2 h2{
@@ -152,6 +153,12 @@ h2.stadium-name{
     }
     .drop-down{
         margin-bottom: 30px;
+    }
+    .season-schedule h2{
+        font-size: 13px;
+    }
+    .season-schedule p{
+        font-size: 10px;
     }
    
     
@@ -223,6 +230,7 @@ h2.stadium-name{
     }
     aside.s2{
         min-height: 484px;
+        
         
     }
     aside.s2 h2{
